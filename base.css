@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Pacifico&display=swap');
+
+*{
+    font-family: "Cal Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primary:#ff6f00;
+    --color-gray: #bcc2cc;
+}
+
+::selection{
+    background: var(--color-primary);
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 99px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    height: fit-content;
+}
+section{
+    padding-inline: 5%;
+    padding-block: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    overflow: hidden;
+    max-width: 2000px;
+    margin: auto;
+    position: relative;
+}
+
+.title span{
+    color: var(--color-primary);
+}
+
+.small-title{
+    font-family: 'Pacifico', cursive;
+}
+
+@media screen and (max-width: 1024px){
+    section{
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5rem;
+    }
+}

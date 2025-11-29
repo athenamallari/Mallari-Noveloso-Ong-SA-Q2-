@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Curious Journeys</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+ 
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');    
+        
+        .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    transition: 0.3s;
+    margin-top: -100px
+}
+
+.header_title{
+    color: rgb(255, 255, 255);
+}
+.header_title span{
+    color:#ff6f00;
+}
+.header_nav{
+    display: flex;
+}
+
+.header_nav li{
+    list-style: none;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 99px;
+    transition: 0.3s ease-out;
+}
+
+.header_nav li:hover{
+    background: #ff6f00;
+}
+
+.header_nav li a{
+    font-weight: 400;
+    color:rgb(255, 255, 255);
+    transition: 0.3s
+}
+.header_nav li:hover a{
+    color: white;
+} 
+body{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/bgphoto.jpg");
+    min-height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    color: white;
+    padding-top: 100px;
+}
+
+.main img{
+  width: 700px;
+  margin: auto;
+  display: block;
+}
+.main h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+.main h2{
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.second img{
+  width: 700px;
+  margin: auto;
+  display: block;
+}
+.second h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+.second h2{
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+@media(max-width: 1140px){
+  .main img{
+    max-width: 100%;
+    height: auto; 
+  }
+}
+@media(max-width: 768px){
+  .main img{
+    max-width: 100%;
+    height: auto;
+    }
+  }
+@media(max-width: 480px){
+  .main img{
+    max-width: 100%;
+    height: auto; 
+  }
+  .main h1{
+    text-align: left;
+  }
+}  
+    </style>
+    
+</head>
+
+<body>
+    <!-- Header -->
+     <header class="header" id="header">
+        <h1 class="header_title">Curious<span>Journeys</span></h1>
+        <ul class="header_nav">
+            <li a href="#hotel">Accomodations</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="beach.html">Beaches</a></li>
+            <li><a href="resto.html">Restaurants</a></li>
+            <li><a href="stuff.html">Activities</a></li>
+        </ul>    
+     </header>
+
+    <div class="main">
+  <h1>Coco Grove Beach Resort (Casa Coco, Siquijor Circumferential Rd, San Juan, Siquijor)</h1>
+  <img src="https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/grove.jpg">
+  <h2>Coco Grove Beach Resort, located on the Siquijor Circumferential Road in San Juan, is a luxurious haven famous for its long 800 meters private white sand beach and immediate access to the lively Tubod Marine Sanctuary. Visitors can select from a variety of cottages and villas designed in a native style, surrounded by lush tropical gardens, with features such as two swimming pools, a swim-up bar, and three unique dining options. Renowned for its outstanding snorkeling and diving right from the beach, the resort mixes a calm, romantic vibe with family-oriented amenities, featuring a kids' club and an on-site spa. Coco Grove offers reliable private transfers using their motor yacht along with well-organized island tours, ensuring a complete and esteemed getaway on Siquijor Island.
+</h2>
+</div>
+   <div class="second">
+  <h1>The Bruce Resort (Siquijor Circumferential Rd, San Juan, Siquijor)</h1>
+  <img src="https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/outside-view-of-the-cottages.jpg">
+  <h2>The Bruce Resort provides a relaxed and welcoming getaway located right at Solangon Beach along the Siquijor Circumferential Road in San Juan. It offers a selection of affordable lodging options, including simple rooms and bungalows.
+It acts as a practical and cozy place for visitors eager to discover the islands west coast spots.</h2>
+</div> 
+   <div class="second">
+  <h1>Tropical Fun-Ta-Sea Rentals (Siquijor Circumferential Rd, San Juan, Siquijor)</h1>
+  <img src="https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/caption.jpg">
+  <h2>Tropical Fun-Ta-Sea Rentals is a friendly,family-oriented resort located on the beach along the Siquijor Circumferential Road in San Juan, Known for its budget-friendly lodgings and studding sea vistas, the resort features various rooms and apartments that serve as a fantastic Starting point for exploring the island. Visitors can enjoy the relaxing vibes and accessible facilities, such as complimentary kayaks and paddleboards, in-houses restaurants and bars offering diverse dishes, and motorbike rentals. This location is perfect for people who are on on a budget but still looking for an enjoyable beach experience with stunning views and a central position close to necessities.</h2>
+  </div>

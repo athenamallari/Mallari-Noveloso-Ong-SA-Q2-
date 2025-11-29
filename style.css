@@ -1,0 +1,153 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding-inline: 5%;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.header_title{
+    color: white;
+}
+.header_title span{
+    color:var(--color-primary);
+}
+.header_nav{
+    display: flex;
+    float: right;
+}
+
+.header_nav li{
+    list-style: none;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 99px;
+    transition: 0.3s ease-out;
+}
+
+.header_nav li:hover{
+    background: var(--color-primary);
+}
+
+.header_nav li a{
+    font-weight: 400;
+    color:white;
+    transition: 0.3s
+}
+.header_nav li:hover a{
+    color: white;
+}  
+
+.home{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/bgphoto.jpg");
+    min-height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    color: white;
+    padding-top: 100px;
+}
+
+.home_small-title{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+}
+
+.home_desc{
+    font-size: 20px;
+}
+
+.home_content{
+    max-width: 550px;
+}
+
+.home_content-btn{
+    margin-top: 1rem;
+}
+
+.home_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.home_cards .home_card{
+    min-width: 200px;
+    height: 250px;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.home_card-title{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    border-radius: 1rem;
+    display: flex;
+    align-items: end;
+    padding: 1rem;
+}
+
+.home_card-1{
+    background: url("https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/tab%201.jpg");
+    grid-row: span 2;
+    align-self: center;
+}
+
+.home_card-2{
+    background: url("https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/tab%202.jpg");
+}
+
+.home_card-3{
+    background: url("https://raw.githubusercontent.com/athenamallari/Mallari-Noveloso-Ong-SA-Q2-/refs/heads/main/tab%203.jpg");
+}
+
+@media(max-width: 1140px){
+   .header{
+    padding: 2rem;
+   } 
+}
+
+@media(max-width: 768px){
+     .header_nav{
+        display: block;
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    .header{
+        position: absolute;
+        top: 0; left: 0; right:0;
+    }
+
+    .home_small-title{
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 480px){
+    .header_nav{
+        display: block;
+        margin-top: 30px;
+        font-size: 12px;
+    }
+    .header{
+        position: absolute;
+        top: 0; left: 0; right:0;
+    }
+    
+    .home_cards{
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    }
+}
